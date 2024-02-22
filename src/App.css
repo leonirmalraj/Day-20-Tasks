@@ -1,38 +1,94 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.features {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.features p {
+  margin: 0;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  text-align: left;
+}
+
+.plan-price {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.plan-price p {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.plan-price h2 {
+  font-weight: bold;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.buy-button {
+  background-color: blue;
   color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
 }
 
-.App-link {
-  color: #61dafb;
+.buy-button:hover {
+  background-color: darkblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: calc(33.33% - 20px);
   }
 }
