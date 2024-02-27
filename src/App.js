@@ -48,7 +48,7 @@ function App() {
       features: ['☑ Single User', '☑ 50GB Storage', '☑ Unlimited Public Projects', '☑ Community Access', '☑ Unlimited Private Projects', '☑ Dedicated Phone Support', '☑ Free Subdomain', '☑ Monthly Status Reports']
     }
   ];
-
+ 
   return (
     <div className="container">
       <div className="PlanCard">
